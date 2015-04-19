@@ -20,5 +20,5 @@ setup(
         "Django==1.7.6",
     ],
     zip_safe=False,
-    scripts=["{{ cookiecutter.repo_name }}/manage.py"],
+    scripts=["manage.py"],
 )

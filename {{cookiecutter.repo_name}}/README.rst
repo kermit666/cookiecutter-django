@@ -84,7 +84,7 @@ It's time to write the code!!!
 Deployment
 ------------
 
-It is possible to deploy to Heroku or to your own server by using Dokku, an open source Heroku clone. 
+It is possible to deploy to Heroku or to your own server by using Dokku, an open source Heroku clone.
 
 Heroku
 ^^^^^^
@@ -105,15 +105,15 @@ Run these commands to deploy the project to Heroku:
     heroku config:set DJANGO_AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY_HERE
     heroku config:set DJANGO_AWS_STORAGE_BUCKET_NAME=YOUR_AWS_S3_BUCKET_NAME_HERE
     git push heroku master
-    heroku run python {{cookiecutter.repo_name}}/manage.py migrate
-    heroku run python {{cookiecutter.repo_name}}/manage.py createsuperuser
+    heroku run python manage.py migrate
+    heroku run python manage.py createsuperuser
     heroku open
 
 Dokku
 ^^^^^
 
 You need to make sure you have a server running Dokku with at least 1GB of RAM. Backing services are
-added just like in Heroku however you must ensure you have the relevant Dokku plugins installed. 
+added just like in Heroku however you must ensure you have the relevant Dokku plugins installed.
 
 .. code-block:: bash
 
